@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.login-bg {
+  min-height: 100vh;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #1e1e1e;
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+}
+
+.login-namePage {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 28px;
+  letter-spacing: -0.2px;
+}
+
+.login-title {
+  margin-top: 90px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 52px;
+  line-height: 62px;
+  letter-spacing: -2px;
+}
+
+.login-container {
+  width: 533px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  padding: 25px 30px;
+}
+
+.login-form > div {
+  margin-bottom: 20px; 
+  min-height: 60px; 
+  position: relative;
+}
+
+.login-label {
+  display: block;
+  text-align: left;
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #333;
+}
+
+.login-input {
+  width: 100%;
+  padding: 19.5px;
+  border: 1px solid #52525b;
+  border-radius: 5px;
+  font-size: 14px;
+  text-align: left;
+  transition: border-color 0.3s ease; 
+}
+
+.login-input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+.login-input.error {
+  border-color: #dc3545;
+  box-shadow: 0 0 0 2px rgba(220, 53, 69, 0.25);
+}
+
+.login-input::placeholder {
+  text-align: center;
+  color: #52525b;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 18.5px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 38px;
+  transition: all 0.2s ease;
+}
+
+.login-btn:hover {
+  background-color: #0056b3;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.login-link {
+  margin-top: 30px;
+}
+
+.login-link a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.error-message {
+  color: #dc3545;
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 10px;
+  display: block;
+  min-height: 16px; 
+  opacity: 0;
+  transform: translateY(-5px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  right: 0;
+} 
+
+.error-message.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.login-input,
+.error-message {
+  transition: all 0.3s ease;
+}

@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.register-bg {
+  min-height: 100vh;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.register-header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #1e1e1e;
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+}
+
+.register-namePage {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 28px;
+  letter-spacing: -0.2px;
+}
+
+.register-container {
+  width: 533px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 90px;
+}
+
+.register-title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 52px;
+  line-height: 62px;
+  letter-spacing: -2px;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  padding: 25px 30px;
+}
+
+.form-group {
+  margin-bottom: 20px; 
+  min-height: 60px; 
+  position: relative;
+}
+
+.register-input {
+  width: 100%;
+  padding: 19.5px;
+  border: 1px solid #52525b;
+  border-radius: 5px;
+  font-size: 14px;
+  text-align: left;
+  transition: border-color 0.3s ease; 
+  margin-top: 17px;
+}
+
+.register-input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+.register-input.error {
+  border-color: #dc3545;
+  box-shadow: 0 0 0 2px rgba(220, 53, 69, 0.25);
+}
+
+.register-input::placeholder {
+  text-align: center;
+  color: #52525b;
+}
+
+.register-btn {
+  width: 100%;
+  padding: 18.5px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 38px;
+  transition: all 0.2s ease;
+}
+
+.register-btn:hover {
+  background-color: #0056b3;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.register-login-link {
+  margin-top: 30px;
+}
+
+.register-login-link a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.error-message {
+  color: #dc3545;
+  font-size: 12px;
+  font-weight: 400;
+  display: block;
+  min-height: 16px;
+  opacity: 0;
+  transform: translateY(-5px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  right: 0;
+}
+
+.error-message.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.register-input,
+.error-message {
+  transition: all 0.3s ease;
+}

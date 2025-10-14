@@ -1,0 +1,208 @@
+{
+  "user": [
+    {
+      "id": "1",
+      "name": "Đức Lợi",
+      "email": "zxcvbnm@gmail.com",
+      "password": "12345678"
+    },
+    {
+      "id": "2",
+      "name": "Bùi Đức Lợi",
+      "email": "asdfghjkl@gmail.com",
+      "password": "12345678"
+    },
+    {
+      "id": "3",
+      "name": "Xây dựng website thương mại điện tử",
+      "email": "qwertyuiop@gmail.com",
+      "password": "12345678"
+    },
+    {
+      "id": "4",
+      "name": "Xây dựng website thương mại điện tử",
+      "email": "team3@gmail.com",
+      "password": "12345678"
+    },
+    {
+      "id": "5",
+      "name": "Xây dựng website thương mại điện tử",
+      "email": "LLL@gmail.com",
+      "password": "12345678"
+    }
+  ],
+  "task": [
+    {
+      "id": "2",
+      "name": "Dealine",
+      "assignee": "1",
+      "status": "To do",
+      "startDate": "2025-10-24",
+      "endDate": "2025-10-26",
+      "priority": "Thấp",
+      "progress": "Đúng tiến độ",
+      "projectId": "1"
+    },
+    {
+      "id": "5",
+      "name": "Xây dựng website thương mại điện tử",
+      "assignee": "2",
+      "status": "Pending",
+      "startDate": "2025-10-18",
+      "endDate": "2025-11-01",
+      "priority": "Thấp",
+      "progress": "Đúng tiến độ",
+      "projectId": "1"
+    },
+    {
+      "id": "6",
+      "name": "Xây dựng website thương mại điện tử 2",
+      "assignee": "2",
+      "status": "Pending",
+      "startDate": "2025-10-11",
+      "endDate": "2025-10-21",
+      "priority": "Trung bình",
+      "progress": "Trễ hạn",
+      "projectId": "1"
+    },
+    {
+      "id": "7",
+      "name": "Xây dựng website thương mại điện tử 3",
+      "assignee": "1",
+      "status": "Done",
+      "startDate": "2025-10-17",
+      "endDate": "2025-10-24",
+      "priority": "Cao",
+      "progress": "Đúng tiến độ",
+      "projectId": "1"
+    },
+    {
+      "id": "8",
+      "name": "Xây dựng website thương mại điện tử 4",
+      "assignee": "2",
+      "status": "In Progress",
+      "startDate": "2025-10-11",
+      "endDate": "2025-10-21",
+      "priority": "Cao",
+      "progress": "Có rủi ro",
+      "projectId": "1"
+    },
+    {
+      "id": "1",
+      "name": "ádasdasdasd",
+      "assignee": "1",
+      "status": "Pending",
+      "startDate": "2025-10-24",
+      "endDate": "2025-10-27",
+      "priority": "Trung bình",
+      "progress": "Có rủi ro",
+      "projectId": "2"
+    },
+    {
+      "id": "76fc",
+      "name": "Bùi Đức Lợi",
+      "assignee": "1",
+      "status": "To do",
+      "startDate": "2025-10-15",
+      "endDate": "2025-10-17",
+      "priority": "Trung bình",
+      "progress": "Có rủi ro",
+      "projectId": "1"
+    }
+  ],
+  "projects": [
+    {
+      "id": "1",
+      "name": "Xây dựng website thương mại điện tử",
+      "description": "Xây dựng website thương mại điện tử",
+      "image": "https://res.cloudinary.com/dcccifk4l/image/upload/v1759842345/iukmrayvkxiezp8z0icr.png",
+      "projectOwnerId": "1",
+      "members": [
+        {
+          "userId": "1",
+          "role": "Project Owner"
+        },
+        {
+          "userId": "2",
+          "role": "Tester"
+        }
+      ],
+      "updatedAt": "2025-10-13"
+    },
+    {
+      "id": "2",
+      "name": "Xây dựng website thương mại điện tử 1",
+      "description": "Xây dựng website thương mại điện tử 1",
+      "image": "https://res.cloudinary.com/dcccifk4l/image/upload/v1759882250/kt89c7jplon8oolyz1tp.png",
+      "projectOwnerId": "1",
+      "members": [
+        {
+          "userId": "1",
+          "role": "Project owner"
+        },
+        {
+          "userId": "2",
+          "role": "Tester"
+        },
+        {
+          "userId": "3",
+          "role": "Dev"
+        }
+      ],
+      "updatedAt": "2025-10-12"
+    },
+    {
+      "id": "3",
+      "name": "Xây dựng website thương mại điện tử 2",
+      "description": "Xây dựng website thương mại điện tử 2",
+      "image": "https://res.cloudinary.com/dcccifk4l/image/upload/v1760057847/hnam3lseibqh9x5c3wka.png",
+      "projectOwnerId": 1,
+      "members": [
+        {
+          "userId": 1,
+          "role": "Project owner"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Xây dựng website thương mại điện tử 3",
+      "description": "Xây dựng website thương mại điện tử 3",
+      "image": "https://res.cloudinary.com/dcccifk4l/image/upload/v1760409328/rw9vybgvaygricd7fsme.png",
+      "projectOwnerId": 1,
+      "members": [
+        {
+          "userId": 1,
+          "role": "Project owner"
+        }
+      ],
+      "updatedAt": "2025-10-14"
+    },
+    {
+      "id": "6",
+      "name": "Xây dựng website thương mại điện tử 4",
+      "description": "1233112312",
+      "image": "https://res.cloudinary.com/dcccifk4l/image/upload/v1760409026/cweamoj8mce905svmkse.png",
+      "projectOwnerId": "2",
+      "members": [
+        {
+          "userId": "2",
+          "role": "Project Owner"
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "name": "Xây dựng website thương mại điện tử 5",
+      "description": "12345678",
+      "image": "https://res.cloudinary.com/dcccifk4l/image/upload/v1760409060/rnppyhnmyq1yjrhcy2ry.png",
+      "projectOwnerId": "2",
+      "members": [
+        {
+          "userId": "2",
+          "role": "Project Owner"
+        }
+      ]
+    }
+  ]
+}

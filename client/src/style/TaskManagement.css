@@ -1,0 +1,133 @@
+.task-controls {
+  display: flex;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.task-list-table h2 {
+  font-weight: 500;
+  font-size: 19.72px;
+  line-height: 24px;
+  letter-spacing: 0px;
+  margin-bottom: 16px;
+}
+
+.task-list-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.task-list-table table th,
+.task-list-table table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+
+
+.task-list-table table th {
+  background-color: #f8f9fa;
+  color: #000000;
+  font-weight: bold;
+text-align: center;}
+
+
+
+.content-table {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+    margin-bottom: 120px;
+}
+
+.left-task h1 {
+  font-weight: 500;
+  font-size: 23.54px; 
+  line-height: 28.8px;
+  letter-spacing: 0px;
+  margin-bottom: 16px;
+}
+
+.left-task p {
+  font-weight: 400;
+  font-size: 15.79px;
+  line-height: 26px;
+  letter-spacing: 0px;
+  margin-bottom: 48px;
+}
+
+.left-task {
+  width: 648px;
+  height: 85    px;
+  padding: 0;
+  margin: 0;
+}
+
+.right-task {
+  width: 386px;
+  height: 85px;
+  padding: 0;
+  margin: 0;
+}
+
+.project-header-content{
+  text-align: left;
+}
+
+.task-row .task-name {
+  font-weight: 500;
+}
+
+.task-row .status-badge {
+  font-weight: 600;
+}
+
+.task-row .priority {
+text-align: center;
+vertical-align: middle;}
+
+.image {
+  width: 16px;
+  height: 16px;
+  margin-left: 4px;
+  cursor: pointer;
+}
+
+
+.modal-overlay-1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw; 
+  height: 100vh; 
+  background-color: rgba(0, 0, 0, 0.6); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; 
+}
+
+
+.modal-overlay-1 .modal-content-1 {
+  margin: 5% auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  position: relative;
+  max-width: 500px;
+  width: 400px;
+  width: 90%;
+  max-height: 80vh;
+  overflow-y: auto;
+  animation: modalSlideIn 0.3s ease-out;
+  margin-bottom: 500px;
+}
+
+.modal-overlay-1 .modal-content-1 .footer-modal .modal-actions-1 {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
