@@ -23,12 +23,25 @@ export default function AddMember() {
     if (errors[name]) setErrors((prev) => ({ ...prev, [name]: "" }));
   };
 
-  const validateForm = () => {
+   const validateForm = () => {
     const newErrors: Record<string, string> = {};
-    if (!formData.email.trim()) newErrors.email = "Email không được để trống";
-    else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email))
-      newErrors.email = "Email không hợp lệ";
-    if (!formData.role.trim()) newErrors.role = "Vai trò không được để trống";
+    
+    // Validate email
+    if (!formData.email.trim()) {
+      newErrors.email = "Email không được để trống";
+    } else if (formData.email.length < 10 || formData.email.length > 50) {
+      newErrors.email = "Email phải có độ dài từ 10 đến 50 ký tự";
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
+      newErrors.email = "Email không đúng định dạng";
+    }
+
+    // Validate role
+    if (!formData.role.trim()) {
+      newErrors.role = "Vai trò không được để trống";
+    } else if (formData.role.trim().length < 2 || formData.role.trim().length > 50) {
+      newErrors.role = "Vai trò phải có độ dài từ 2 đến 50 ký tự";
+    }
+
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
@@ -133,7 +146,7 @@ export default function AddMember() {
               <label htmlFor="member-email">Email</label>
               <input
                 id="member-email"
-                type="email"
+                type="text"
                 name="email"
                 value={formData.email}
                 onChange={handleInputChange}

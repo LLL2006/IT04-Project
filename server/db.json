@@ -11,24 +11,6 @@
       "name": "Bùi Đức Lợi",
       "email": "asdfghjkl@gmail.com",
       "password": "12345678"
-    },
-    {
-      "id": "3",
-      "name": "Xây dựng website thương mại điện tử",
-      "email": "qwertyuiop@gmail.com",
-      "password": "12345678"
-    },
-    {
-      "id": "4",
-      "name": "Xây dựng website thương mại điện tử",
-      "email": "team3@gmail.com",
-      "password": "12345678"
-    },
-    {
-      "id": "5",
-      "name": "Xây dựng website thương mại điện tử",
-      "email": "LLL@gmail.com",
-      "password": "12345678"
     }
   ],
   "task": [
@@ -46,7 +28,7 @@
     {
       "id": "5",
       "name": "Xây dựng website thương mại điện tử",
-      "assignee": "2",
+      "assignee": "1",
       "status": "Pending",
       "startDate": "2025-10-18",
       "endDate": "2025-11-01",
@@ -99,13 +81,13 @@
       "projectId": "2"
     },
     {
-      "id": "76fc",
-      "name": "Bùi Đức Lợi",
+      "id": "3bdd",
+      "name": "Xây dựng website thương mại điện tử 9",
       "assignee": "1",
       "status": "To do",
-      "startDate": "2025-10-15",
-      "endDate": "2025-10-17",
-      "priority": "Trung bình",
+      "startDate": "2025-10-18",
+      "endDate": "2025-10-19",
+      "priority": "Thấp",
       "progress": "Có rủi ro",
       "projectId": "1"
     }
@@ -126,8 +108,7 @@
           "userId": "2",
           "role": "Tester"
         }
-      ],
-      "updatedAt": "2025-10-13"
+      ]
     },
     {
       "id": "2",
@@ -148,8 +129,7 @@
           "userId": "3",
           "role": "Dev"
         }
-      ],
-      "updatedAt": "2025-10-12"
+      ]
     },
     {
       "id": "3",
@@ -175,8 +155,7 @@
           "userId": 1,
           "role": "Project owner"
         }
-      ],
-      "updatedAt": "2025-10-14"
+      ]
     },
     {
       "id": "6",

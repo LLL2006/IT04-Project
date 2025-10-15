@@ -83,8 +83,8 @@ export default function TaskModal({
     const end = task.endDate ? new Date(task.endDate) : null;
 
     if (!task.name.trim()) newErrors.name = "Tên nhiệm vụ không được để trống";
-    else if (task.name.trim().length < 3 || task.name.trim().length > 100)
-      newErrors.name = "Tên nhiệm vụ phải có độ dài từ 3 đến 100 ký tự";
+    else if (task.name.trim().length < 3 || task.name.trim().length > 50)
+      newErrors.name = "Tên nhiệm vụ phải có độ dài từ 3 đến 50 ký tự";
 
     if (!task.assignee) newErrors.assignee = "Chọn người phụ trách";
     if (!task.status) newErrors.status = "Chọn trạng thái";
